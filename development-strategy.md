@@ -31,12 +31,12 @@ __As a site visitor, I want to see the buttons that will execute the functions__
 
 ### Repo
 
-- [ ] developed on a branch named `index`
+- [X] developed on a branch named `index`
 
 ### README.md
 
-- [ ] create the buttons on index.html
-- [ ] create the stylesheet in styles.css
+- [X] create the buttons on index.html
+- [X] create the styles in styles.css
 
 ---
 
