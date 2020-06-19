@@ -3,11 +3,37 @@
 
 <head>
   <meta charset='utf8'>
+  
   <title>Debugging: project, week 1</title>
   <!-- Leave this here!  It renders the review buttons  -->
   <script src='./review-buttons/init.js'></script>
+  <link rel="stylesheet" href="style.css" />
 </head>
 
-<body></body>
+<body>
+
+  <!--longest-fnd users part-->
+  <section id="private-main">
+    <div class="find-longest">
+      <div>
+        <h1>Red Planet</h1>
+        <p>let us explore red planet if it supports the life on it or not </p>
+      </div>
+      <div class="img-box">
+        <img src="img/red.jpg" alt="Astronaut watering the plant in space" width="1200" height="800">
+      </div>
+      <form class="form-find" action="">
+        <input id="input-longest1" type="text" placeholder=" Enter a Quote or a Sentence">
+        <input type="input-longest2" type="text" placeholder="Write many lettrs in the longest"> 
+      </form>
+    </div>
+      <div class="div-button-longest">
+        <button class="button-longest" onclick="findLongestWordLengthHandler()">Enter</button>
+      </div>
+    
+
+  </section>
+  <script src="scripts/find-longest-word-length.js"></script>
+</body>
 
 </html>
