@@ -2,15 +2,35 @@
 <html lang='en'>
 
 <head>
-  <meta charset='utf8'>
-  
+
+  <meta charset='utf-8'>
   <title>Debugging: project, week 1</title>
   <!-- Leave this here!  It renders the review buttons  -->
   <script src='./review-buttons/init.js'></script>
-  <link rel="stylesheet" href="style.css" />
+  <script src='./scripts/confirm-ending.js'></script>
+  <script src='./scripts/convert-to-celsius.js'></script>
+  <script src='./scripts/convert-to-fahrenheit.js'></script>
+  <script src='./scripts/find-longest-word-length.js'></script>
+  <script src='./scripts/repeat-string-num-times.js'></script>
+  <script src='./scripts/reverse-a-string.js'></script>
+  <link rel="stylesheet" type="text/css" href="./style.css">
+
+
 </head>
 
 <body>
+
+
+  <main>
+    <h1>Click on the buttons to see the functions in action:</h1>
+    <button onclick='confirmEndingHandler()'>Confirm Ending</button> <br>
+    <button onclick='convertToCelsiusHandler()'>Convert to Celsius</button> <br>
+    <button onclick='convertToFahrenheitHandler()'>Convert to Fahrenheit</button> <br>
+    <button onclick='findLongestWordLengthHandler()'>Find Longest Word Length</button> <br>
+    <button onclick='repeatStringNumTimesHandler()'>Repeat String Number Times</button>
+    <button onclick='reverseStringHandler()'>Reverse a String</button>
+  </main>
+
 
   <!--longest-fnd users part-->
   <section id="private-main">
@@ -30,10 +50,7 @@
       <div class="div-button-longest">
         <button class="button-longest" onclick="findLongestWordLengthHandler()">Enter</button>
       </div>
-    
-
   </section>
-  <script src="scripts/find-longest-word-length.js"></script>
 </body>
 
 </html>

@@ -1,3 +1,11 @@
+main {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+  }
+
 /* longest find */
 .find-longest h1 {
 	text-align: center;
@@ -55,3 +63,4 @@ input[type="input-longest2"] {
 		background-color: skyblue;
 	}
 }
+
