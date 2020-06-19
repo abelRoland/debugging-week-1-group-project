@@ -4,6 +4,8 @@
 
 This repo is created in order to develop debugging skills in HTML / CSS and JavaScript 
 
+# WireFrame
+
 ## 0. Set-Up
 
 __A User can see a empty site at the correct URL__
@@ -12,10 +14,12 @@ __A User can see a empty site at the correct URL__
 
 ### Repo
 
-1. Created a new repository
+1. Created a new repository [generated](https://github.com/HackYourFutureBelgium/debugging-project-week-1)
+1. Clone the repo
 1. Add collaborators
 1. Add a license
 1. Create a README
+1. Add [this wireframe](wireFrame.png)
 1. turn on GitHub Pages
 1. Write a development strategy
 1. Translate the strategy into issues
@@ -88,8 +92,25 @@ __As a site visitor, I want to execute the function `find-longest`__
 
 ### Repo
 
-- [ ] developed on a branch named `find-longest`
-- [ ] finish the function 'find-longest-word-length.js`
+This story was developed on a branch named `find-longest`
+
+### HTML
+
+- Add h1 & p tags for the title and p for little explanation 
+- Add red planet image as background 
+- Add events onclick 
+- add buttun tags 
+
+### CSS 
+
+- Add media quiries for responsive 
+- Add font-weight 
+- Add text-align 
+
+
+### JavaScript
+
+- find-longest solve it and linked to HTML 
 
 ---
 

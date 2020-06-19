@@ -1,0 +1,57 @@
+/* longest find */
+.find-longest h1 {
+	text-align: center;
+	text-transform: capitalize;
+	color: red;
+	font-weight: bold;
+}
+.find-longest p {
+	text-align: center;
+	text-transform: uppercase;
+	color: seagreen;
+	font-weight: bold;
+}
+
+.img-box {
+	text-align: center;
+}
+.find-longest form {
+	text-align: center;
+}
+
+#input-longest1 {
+	min-width: 20%;
+	height: 30px;
+	font-weight: bold;
+	background-color: skyblue;
+	color: rgb(23, 0, 128);
+}
+
+input[type="input-longest2"] {
+	min-width: 20%;
+	height: 30px;
+	font-weight: bold;
+	background-color: skyblue;
+	color: rgb(170, 4, 12);
+}
+
+.button-longest {
+	color: rgb(4, 170, 40);
+	min-width: 15%;
+	font-weight: bold;
+	font-weight: 1000;
+	height: 35px;
+	background-color: rgb(170, 4, 95);
+	text-align: center;
+}
+
+.div-button-longest {
+	text-align: center;
+	margin-right: 650px;
+}
+
+@media only screen and (max-width: 600px) {
+	body {
+		background-color: skyblue;
+	}
+}
