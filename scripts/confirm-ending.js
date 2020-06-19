@@ -3,7 +3,14 @@
 console.log('-- loading: confirmEnding');
 
 
-function confirmEnding() { }
+function confirmEnding(string, target) {
+  if (string.substr(-target.length) == target){
+    return true;
+  }
+  else {
+    return false;
+  }
+ }
 
 
 {
