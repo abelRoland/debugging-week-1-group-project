@@ -2,9 +2,23 @@
 
 console.log('-- loading: repeatStringNumTimes');
 
+// CORE LOGIC PHASE
 
-function repeatStringNumTimes() { }
+function repeatStringNumTimes(str, times) { 
 
+    if(typeof str !== "string") { throw new TypeError();}
+    if(typeof times !== "number") { throw new TypeError();}
+
+    let repeatStr = "";
+    for (let i = 0; i < times; i++) {
+        repeatStr += str;
+    }
+    return repeatStr;
+
+}
+
+
+// TESTING PHASE
 
 {
   console.log('-- testing: repeatStringNumTimes ');
@@ -53,17 +67,32 @@ function repeatStringNumTimes() { }
   console.assert(_7_actual === _7_expect, 'Test 7');
 }
 
+// FUNCTION HANDLER PHASE
 
 function repeatStringNumTimesHandler() {
   debugger;
 
   // read user input
 
+  const inputString = prompt("Please enter some text or characters", "Example: abc");
+  let inputTimes = prompt("Please enter how many times you would like to repeat your given text or characters");
+  let numbered = Number(inputTimes);
+
   // core logic
-  const result = repeatStringNumTimes(str, num);
+
+  const result = repeatStringNumTimes(inputString, numbered);
 
   // display for use
 
+  alert(result);
+
   // log for developers
+
+  console.log('-- interaction log --');
+  console.log('inputString: ', typeof inputString, '\n', inputString);
+  console.log('inputTimes: ', typeof inputTimes, '\n', inputTimes);
+  console.log('numbered: ', typeof numbered, '\n', numbered);
+  console.log('result: ', typeof result, '\n', result);
 }
+
 
