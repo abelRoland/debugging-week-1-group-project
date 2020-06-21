@@ -6,10 +6,11 @@ console.log('-- loading: convertToC');
 function convertToC(arg) {
 
   const celsius = (arg - 32) * 5 / 9;
-  const celsiusRound = ( Math.floor(celsius * 100) / 100 );
+  const celsiusRound = (Math.floor(celsius * 100) / 100);
   return celsiusRound;
- }
+}
 
+// TESTING PHASE
 
 {
   console.log('-- testing: convertToC ');
@@ -46,6 +47,7 @@ function convertToC(arg) {
   console.assert(_6_actual === _6_expect, 'Test 6');
 }
 
+// FUNCTION HANDLER PHASE
 
 function convertToCHandler() {
   debugger;
@@ -56,14 +58,15 @@ function convertToCHandler() {
   if (input === null || input === "") {
     alert('Please enter a valid number');
   } else {
-      let inputConfirmed = +input;
-      if (Object.is(inputConfirmed, NaN)) { alert('Be sure you are entering a number! Try again. ');}
-        else {
-        const result = convertToC(inputConfirmed);
-        // display for use
-        alert(`The temperature is ${result} Celsius`);
-        // log for developers
-        console.log(result);
-        }
+    let inputConfirmed = +input;
+    if (Object.is(inputConfirmed, NaN)) { alert('Be sure you are entering a number! Try again. '); }
+    else {
+      const result = convertToC(inputConfirmed);
+      // display for use
+      alert(`The temperature is ${result} Celsius`);
+      // log for developers
+      console.log(result);
+    }
   }
 }
+
