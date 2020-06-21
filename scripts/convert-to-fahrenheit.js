@@ -46,11 +46,19 @@ function convertToFahrenheitHandler() {
   debugger;
 
   // read user input
-
+  const input = prompt(`Please enter the temperature in Celsius`);
   // core logic
-  const result = convertToFahrenheit(c);
-
-  // display for use
-
-  // log for developers
+  if (input === null || input === " ") {
+    alert('Please enter a valid number');
+  } else {
+    let inputConfirmed = +input;
+    if (Object.is(inputConfirmed, NaN)) { alert('Be sure you are entering a number! Try again. '); }
+    else {
+      const result = convertToFahrenheit(c);
+      // display for use
+      alert(`The temperature is ${result} Celsius`);
+      // log for developers
+      console.log(result);
+    }
+  }
 }
