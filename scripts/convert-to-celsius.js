@@ -1,10 +1,14 @@
 'use strict';
 
-console.log('-- loading: convertToCelsius');
+console.log('-- loading: convertToC');
 
 
-function convertToCelsius() { }
+function convertToCelsius(arg) {
 
+  return newFunction(arg);
+}
+
+// TESTING PHASE
 
 {
   console.log('-- testing: convertToCelsius ');
@@ -17,7 +21,7 @@ function convertToCelsius() { }
 
   const _2_arg = 14;
   const _2_expect = -10;
-  const _2_actual = convertToC(_2_arg);
+  const _2_actual = convertToCelsius(_2_arg);
   console.assert(_2_actual === _2_expect, 'Test 2');
 
   const _3_arg = 32;
@@ -41,16 +45,33 @@ function convertToCelsius() { }
   console.assert(_6_actual === _6_expect, 'Test 6');
 }
 
+function newFunction(arg) {
+  const celsius = (arg - 32) * 5 / 9;
+  const celsiusRound = (Math.floor(celsius * 100) / 100);
+  return celsiusRound;
+}
+
+// FUNCTION HANDLER PHASE
 
 function convertToCelsiusHandler() {
   debugger;
 
   // read user input
-
+  const input = prompt(`Please enter the temperature in Fahrenheit`);
   // core logic
-  const result = convertToCelsius(f);
-
-  // display for use
-
-  // log for developers
+  if (input === null || input === "") {
+    alert('Please enter a valid number');
+  } else {
+    let inputConfirmed = +input;
+    if (Object.is(inputConfirmed, NaN)) { alert('Be sure you are entering a number! Try again. '); }
+    else {
+      const result = convertToCelsius(inputConfirmed);
+      
+      // display for use
+      alert(`The temperature is ${result} Celsius`);
+      // log for developers
+      console.log(result);
+    }
+  }
 }
+
