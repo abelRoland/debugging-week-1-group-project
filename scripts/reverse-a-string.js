@@ -2,9 +2,16 @@
 
 console.log('-- loading: reverseString');
 
+function reverseString(str) {
 
-function reverseString() { }
+let newString = "";
+ 
+for (let i = str.length - 1; i >= 0; i--) { 
+    newString += str[i]; // or newString = newString + str[i];
+}
 
+return newString;
+}
 
 {
   console.log('-- testing: reverseString ');
@@ -46,12 +53,21 @@ function reverseStringHandler() {
   debugger;
 
   // read user input
+  const string = prompt(`Write something to be reversed`);
+  let str = String(string);
 
   // core logic
-  const result = reverseString(str);
+
+   let newString = "";
+    for (let i = str.length - 1; i >= 0; i--) {
+        newString += str[i];
+    }
+  const result = newString;
 
   // display for use
-
+  alert(result);
   // log for developers
+  console.log('\n--- reverse string ---');
+  console.log('string:', typeof string, '\n', string);
+  console.log('result:', typeof result, '\n', result);
 }
-

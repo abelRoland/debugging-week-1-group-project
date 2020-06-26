@@ -5,7 +5,7 @@ console.log('-- loading: convertToFahrenheit');
 
 function convertToFahrenheit(arg) {
 
-const f = (arg * 9) / 5 + 32;
+  const f = (arg * 9) / 5 + 32;
   return f;
 
 }
@@ -53,17 +53,19 @@ function convertToFahrenheitHandler() {
   // read user input
   const input = prompt(`Please enter the temperature in Celsius`);
   // core logic
-  if (input === null || input === "") {
-    alert('Please enter a valid number');
-  } else { }
-  let inputConfirmed = +input;
-  if (Object.is(inputConfirmed, NaN)) { alert('Be sure you are entering a number! Try again. '); }
-  else {
-    const result = convertToFahrenheit(inputConfirmed);
 
-    // display for use
-    alert(`The temperature is ${result} Fahrenheit`);
-    // log for developers
-    console.log(result);
+  if (input === null || input === " ") {
+    alert('Please enter a valid number');
+  } else {
+    let inputConfirmed = +input;
+    if (Object.is(inputConfirmed, NaN)) {
+      alert('Be sure you are entering a number! Try again. '); 
+    } else {
+      const result = convertToFahrenheit(inputConfirmed);
+      // display for use
+      alert(`The temperature is ${result} Fahrenheit`);
+      // log for developers
+      console.log(result);
+    }
   }
 }
