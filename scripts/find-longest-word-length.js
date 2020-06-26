@@ -48,19 +48,19 @@ function findLongestWordLength(str) {
 function findLongestWordLengthHandler() {
 	debugger;
 
+	debugger;
+
 	// read user input
-	const sentence = document.getElementById('input-longest1').value;
-	const input_longest = document.getElementById('input-longest2').value;
-	const guess_longest = Number(input_longest);
-
+	const sentence = prompt("Please enter some text");
+	const str = String(sentence);
+  
 	// core logic
-	const result_longest = guess_longest === findLongestWordLength(sentence);
-
+	const result = findLongestWordLength(sentence);
+  
 	// display for use
-	alert(result_longest);
+	alert(`The longest word has ${result} letters`);
 
 	// log for developers
 	console.log('Input of quote or sentence : ', sentence, '\n ', `type : ${typeof sentence}`);
-	console.log('Longest word prediction of the user: ', guess_longest, '\n ', `type : ${typeof guess_longest}`);
-	console.log('Result of the prediction: ', result_longest, '\n ', `type : ${typeof result_longest}`);
+	console.log('Result of the prediction: ', result, '\n ', `type : ${typeof result}`);
 }
