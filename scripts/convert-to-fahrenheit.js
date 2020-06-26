@@ -5,7 +5,8 @@ console.log('-- loading: convertToFahrenheit');
 
 function convertToFahrenheit(arg) {
 
-  return newFunction(arg);
+const f = (arg * 9) / 5 + 32;
+  return f;
 
 }
 
