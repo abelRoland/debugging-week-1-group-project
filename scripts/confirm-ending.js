@@ -72,11 +72,26 @@ function confirmEndingHandler() {
   debugger;
 
   // read user input
-
+  const input1 = prompt('Put some random text');
+  const str = String(input1);
   // core logic
-  const result = confirmEnding(str, ending);
-
+  if (str === "null" || str === "") {
+    alert('Please enter a valid value');
+  } else {
+      const input2 = prompt (`Please confirm the ending`);
+      const ending = String(input2);
+      if (ending === "null" || ending === ""){
+        alert('Please enter a valid number');
+      } else {
+        const result = confirmEnding(str, ending);
+        const message = result ? `You are right. Thank you` : `Unfortunately you are wrong`;      
   // display for use
-
+  alert(message);
   // log for developers
+  console.log(result);
+        console.log(message);
+      }
+    }
+  
+
 }

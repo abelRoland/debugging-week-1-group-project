@@ -35,7 +35,7 @@ __As a site visitor, I want to see the buttons that will execute the functions__
 
 ### Repo
 
-- [X] developed on a branch named `index`
+- [x] developed on a branch named `index`
 
 ### README.md
 
@@ -52,8 +52,8 @@ __As a site visitor, I want to execute the function `confirm-ending`__
 
 ### Repo
 
-- [ ] developed on a branch named `confirm-ending`
-- [ ] finish the function 'confirm-ending.js`
+- [x] developed on a branch named `confirm-ending`
+- [x] finish the function 'confirm-ending.js`
 
 ---
 
@@ -65,8 +65,8 @@ __As a site visitor, I want to execute the function `convert-to-celsius`__
 
 ### Repo
 
-- [ ] developed on a branch named `convert-to-celsius`
-- [ ] finish the function 'convert-to-celsius.js`
+- [x] developed on a branch named `convert-to-celsius`
+- [x] finish the function 'convert-to-celsius.js`
 
 ---
 
@@ -78,8 +78,8 @@ __As a site visitor, I want to execute the function `convert-to-fahrenheit`__
 
 ### Repo
 
-- [ ] developed on a branch named `convert-to-fahrenheit`
-- [ ] finish the function 'convert-to-fahrenheit.js`
+- [x] developed on a branch named `convert-to-fahrenheit`
+- [x] finish the function `convert-to-fahrenheit.js`
 
 ---
 
@@ -92,25 +92,8 @@ __As a site visitor, I want to execute the function `find-longest`__
 
 ### Repo
 
-This story was developed on a branch named `find-longest`
-
-### HTML
-
-- Add h1 & p tags for the title and p for little explanation 
-- Add red planet image as background 
-- Add events onclick 
-- add buttun tags 
-
-### CSS 
-
-- Add media quiries for responsive 
-- Add font-weight 
-- Add text-align 
-
-
-### JavaScript
-
-- find-longest solve it and linked to HTML 
+- [x] Developed on a branch called `find-longest`
+- [x] finish the function `find-longest` 
 
 ---
 
@@ -123,8 +106,8 @@ __As a site visitor, I want to execute the function `repeat-strings`__
 
 ### Repo
 
-- [ ] developed on a branch named `repeat-strings`
-- [ ] finish the function 'repeat-strings-num-times.js`
+- [x] developed on a branch named `repeat-strings`
+- [x] finish the function `repeat-strings-num-times.js`
 
 ---
 
@@ -136,8 +119,8 @@ __As a site visitor, I want to execute the function `reverse-a-string`__
 
 ### Repo
 
-- [ ] developed on a branch named `reverse`
-- [ ] finish the function 'reverse-a-string.js`
+- [x] developed on a branch named `reverse`
+- [x] finish the function `reverse-a-string.js`
 
 ---
 
@@ -149,7 +132,16 @@ __As a perfectionist, I want everything perfect :)__
 
 ### Repo
 
-- [ ] developed on a branch named `finishing`
-- [ ] 
+- [x] developed on a branch named `finishing`
 
-### Development-Strategy
+## 9. Fixing Bugs
+
+__Branch created to fix the bugs of the project__
+
+> assigned to Abel
+
+### Repo
+
+- [x] developed on a branch named `bugFix`
+- [x] Fixing HTML and CSS bugs;
+- [x] Fixing JS bugs;

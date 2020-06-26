@@ -22,7 +22,7 @@ function convertToC(arg) {
 
   const _2_arg = 14;
   const _2_expect = -10;
-  const _2_actual = convertToCelsius(_2_arg);
+  const _2_actual = convertToC(_2_arg);
   console.assert(_2_actual === _2_expect, 'Test 2');
 
   const _3_arg = 32;
