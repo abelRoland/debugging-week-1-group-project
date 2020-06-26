@@ -4,8 +4,9 @@ console.log('-- loading: convertToC');
 
 
 function convertToCelsius(arg) {
-
-  return newFunction(arg);
+  const celsius = (arg - 32) * 5 / 9;
+  const celsiusRound = (Math.floor(celsius * 100) / 100);
+  return celsiusRound;
 }
 
 // TESTING PHASE
@@ -43,12 +44,6 @@ function convertToCelsius(arg) {
   const _6_expect = -40;
   const _6_actual = convertToCelsius(_6_arg);
   console.assert(_6_actual === _6_expect, 'Test 6');
-}
-
-function newFunction(arg) {
-  const celsius = (arg - 32) * 5 / 9;
-  const celsiusRound = (Math.floor(celsius * 100) / 100);
-  return celsiusRound;
 }
 
 // FUNCTION HANDLER PHASE
